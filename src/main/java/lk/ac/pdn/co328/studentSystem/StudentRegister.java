@@ -19,17 +19,17 @@ public abstract class StudentRegister
     public abstract void addStudent(Student st) throws Exception ;
 
     // Remove a student from the system
-    public abstract void removeStudent(int regNo);
+    public abstract void removeStudent(int regNo) throws Exception ;
 
     //Finds the student with the given registration number
-    public abstract Student findStudent(int regNo);
+    public abstract Student findStudent(int regNo) throws Exception ;
 
     // Cleans all the data from the student register
-    public abstract void reset();
+    public abstract void reset() throws Exception ;
 
     // Finds all the students that has the given name as a part of their name.
-    public abstract ArrayList<Student> findStudentsByName(String name);
+    public abstract ArrayList<Student> findStudentsByName(String name) throws Exception ;
 
     //Gives all the registration numbers of the students.
-    public abstract ArrayList<Integer> getAllRegistrationNumbers();
+    public abstract ArrayList<Integer> getAllRegistrationNumbers() throws Exception ;
 }
